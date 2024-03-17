@@ -22,7 +22,7 @@ library(ovlytics)
 Import the file you are interested in considering more than one match, you have to import all the folder
 
 ```{r}
-filename <- "D:/DATI/Documents/GitHub/CuneoWebsite.io/Assets/Cuneo-Bergamo_cuneo.dvw"
+filename <- "F:/&##Backup##_R00 HONDA O-ALLIANZ V.dvw"
 #d <- dir("C:/Users/mirko/OneDrive - Politecnico di Milano/Altro/Volley/Conco2324/Parella Torino/Ritorno/", pattern = "dvw$", full.names = TRUE)
 ```
 
@@ -72,7 +72,8 @@ all_players_on_court <- function(x, target_player_ids, team = NULL) {
 ```
 
 ```{r}
-d <- dir("D:/Dati/Documents/GitHub/CuneoWebsite.io/Assets/", pattern = "dvw$", full.names = TRUE)
+#d <- dir("D:/Dati/Documents/GitHub/CuneoWebsite.io/Assets/", pattern = "dvw$", full.names = TRUE)
+d <- dir("F:/", pattern = "dvw$", full.names = TRUE)
 lx <- list()
 ## read each file
 for (fi in seq_along(d)) lx[[fi]] <- dv_read(d[fi], insert_technical_timeouts = FALSE)
